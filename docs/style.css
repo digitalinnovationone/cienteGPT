@@ -168,8 +168,8 @@ span.material-symbols-rounded {
 
 img {
     border-radius: 50%;
-    max-width: 230px;
-    max-height: 230px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 @keyframes animateDots {
