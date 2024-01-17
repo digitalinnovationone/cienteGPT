@@ -127,7 +127,6 @@ span.material-symbols-rounded {
     height: 80px;
     align-self: flex-start;
     object-fit: cover;
-    border-radius: 2px;
 }
 
 .chat .chat-details p {
