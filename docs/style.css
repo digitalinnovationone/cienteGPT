@@ -73,7 +73,7 @@ body {
 
 .default-text p {
     margin-top: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .chat-container .chat {
@@ -168,8 +168,8 @@ span.material-symbols-rounded {
 
 img {
     border-radius: 50%;
-    max-width: 240px;
-    max-height: 240px;
+    max-width: 230px;
+    max-height: 230px;
 }
 
 @keyframes animateDots {
@@ -277,7 +277,7 @@ img {
     }
 
     :where(.default-text p, textarea, .chat p) {
-        font-size: 0.95rem !important;
+        font-size: 0.85rem !important;
     }
 
     .chat-container .chat {

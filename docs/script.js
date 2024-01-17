@@ -19,7 +19,7 @@
             <p>GPT treinado com base no "DIO ESG Impact Report 2023".</p>
             <p><strong>Esteja ciente de que este LLM também sabe muito sobre o Pablito 😘</strong></p>
             <br>
-            <h4>Perguntas Sugeridas:</h4>
+            <p>Prompts Sugeridos:</p>
             <p class="suggested-question">Quais são as conquistas destacadas no relatório de impacto social da DIO?</p>
             <p class="suggested-question">Quais são os compromissos feitos no Fórum Econômico Mundial 2023?</p>
             <p class="suggested-question">Como a DIO está abordando a desigualdade de gênero no mercado de tecnologia?</p>
