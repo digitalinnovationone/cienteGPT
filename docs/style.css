@@ -161,6 +161,18 @@ span.material-symbols-rounded {
     margin-left: 0;
 }
 
+.suggested-question {
+    color: rgb(0, 179, 255);
+    cursor: pointer;
+    text-decoration: dotted;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 240px;
+    max-height: 240px;
+}
+
 @keyframes animateDots {
 
     0%,
@@ -257,12 +269,6 @@ span.material-symbols-rounded {
 
 .typing-controls span:hover {
     background: var(--icon-hover-bg);
-}
-
-.suggested-question {
-    color: rgb(0, 179, 255);
-    cursor: pointer;
-    text-decoration: dotted;
 }
 
 /* Reponsive Media Query */
