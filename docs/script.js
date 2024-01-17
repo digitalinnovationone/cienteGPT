@@ -87,13 +87,6 @@
         chatContainer.scrollTo(0, chatContainer.scrollHeight);
     }
 
-    function copyResponse(copyBtn) {
-        const reponseTextElement = copyBtn.parentElement.querySelector("p");
-        navigator.clipboard.writeText(reponseTextElement.textContent);
-        copyBtn.textContent = "done";
-        setTimeout(() => copyBtn.textContent = "content_copy", 1000);
-    }
-
     function showTypingAnimation() {
         const html = `<div class="chat-content">
                         <div class="chat-details">
@@ -159,3 +152,10 @@
     loadDataFromLocalStorage();
     sendButton.addEventListener("click", handleOutgoingChat);
 })();
+
+function copyResponse(copyBtn) {
+    const responseTextElement = copyBtn.parentElement.querySelector("p");
+    navigator.clipboard.writeText(responseTextElement.textContent);
+    copyBtn.textContent = "done";
+    setTimeout(() => copyBtn.textContent = "content_copy", 1000);
+}
