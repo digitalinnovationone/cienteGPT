@@ -19,7 +19,7 @@
             <p>GPT treinado com base no "DIO ESG Impact Report 2023".</p>
             <p><strong>Esteja ciente de que este LLM também sabe muito sobre o Pablito 😘</strong></p>
             <br>
-            <h2>Perguntas Sugeridas:</h2>
+            <h4>Perguntas Sugeridas:</h4>
             <p class="suggested-question">Quais são as conquistas destacadas no relatório de impacto social da DIO?</p>
             <p class="suggested-question">Quais são os compromissos feitos no Fórum Econômico Mundial 2023?</p>
             <p class="suggested-question">Como a DIO está abordando a desigualdade de gênero no mercado de tecnologia?</p>
@@ -97,7 +97,7 @@
     function showTypingAnimation() {
         const html = `<div class="chat-content">
                         <div class="chat-details">
-                            <img src="images/chatbot.png" alt="chatbot-img">
+                            <img src="images/chatbot_message.png" alt="chatbot-img">
                             <div class="typing-animation">
                                 <div class="typing-dot" style="--delay: 0.2s"></div>
                                 <div class="typing-dot" style="--delay: 0.3s"></div>
