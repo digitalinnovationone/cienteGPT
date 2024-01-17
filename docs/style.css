@@ -288,6 +288,7 @@ img {
     .chat-container .chat img {
         height: 64px;
         width: 64px;
+        border-radius: 50%;
     }
 
     .chat-container .chat p {

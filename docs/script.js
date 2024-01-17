@@ -4,7 +4,6 @@
     const chatContainer = document.querySelector(".chat-container");
     const themeButton = document.querySelector("#theme-btn");
     const deleteButton = document.querySelector("#delete-btn");
-    const initialInputHeight = chatInput.scrollHeight;
 
     let userPrompt = null;
 
@@ -118,7 +117,6 @@
         if (!userPrompt) return;
 
         chatInput.value = "";
-        chatInput.style.height = `${initialInputHeight}px`;
 
         const html = `<div class="chat-content">
                         <div class="chat-details">
