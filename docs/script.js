@@ -13,15 +13,29 @@
         document.body.classList.toggle("light-mode", themeColor === "light_mode");
         themeButton.innerText = document.body.classList.contains("light-mode") ? "dark_mode" : "light_mode";
 
-        const defaultText = `<div class="default-text">
-                                <img src="images/chatbot.png" alt="chatbot-img">
-                                <h1>CienteGPT</h1>
-                                <p>GPT treinado com base no "DIO ESG Impact Report 2023".</p>
-                                <p><strong>E o mais importante, este LLM também aprendeu muito sobre o Pablito 😘</strong></p>
-                            </div>`;
+        const defaultText = `
+        <div class="default-text">
+            <img src="images/chatbot.png" alt="chatbot-img">
+            <h1>CienteGPT</h1>
+            <p>GPT treinado com base no "DIO ESG Impact Report 2023".</p>
+            <p><strong>Esteja ciente de que este LLM também sabe muito sobre o Pablito 😘</strong></p>
+            <br>
+            <h2>Perguntas Sugeridas:</h2>
+            <p class="suggested-question">Quais são as conquistas destacadas no relatório de impacto social da DIO?</p>
+            <p class="suggested-question">Quais são os compromissos feitos no Fórum Econômico Mundial 2023?</p>
+            <p class="suggested-question">Como a DIO está abordando a desigualdade de gênero no mercado de tecnologia?</p>
+            <p class="suggested-question">Uma curiosidade sobre Pablo Zaniolo?</p>
+            <p class="suggested-question">Me diga tudo o que sabe sobre o Pablo?</p>
+        </div>`;
 
         chatContainer.innerHTML = localStorage.getItem("all-chats") || defaultText;
         chatContainer.scrollTo(0, chatContainer.scrollHeight);
+
+        document.querySelectorAll('.suggested-question').forEach(p => {
+            p.addEventListener('click', function () {
+                chatInput.value = this.textContent;
+            });
+        });
     }
 
     function createChatElement(content, className) {

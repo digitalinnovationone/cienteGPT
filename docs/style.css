@@ -38,7 +38,8 @@ body {
 .chat-container {
     overflow-y: auto;
     max-height: 100vh;
-    padding-bottom: 150px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 :where(.chat-container, textarea)::-webkit-scrollbar {
@@ -256,6 +257,12 @@ span.material-symbols-rounded {
 
 .typing-controls span:hover {
     background: var(--icon-hover-bg);
+}
+
+.suggested-question {
+    color: rgb(0, 179, 255);
+    cursor: pointer;
+    text-decoration: dotted;
 }
 
 /* Reponsive Media Query */
